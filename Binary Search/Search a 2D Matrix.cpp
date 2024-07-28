@@ -10,7 +10,7 @@ public:
         int right = n*m - 1; 
 
         while( left <= right){
-            int mid = left + (right - left)/2; // 5
+            int mid = left + (right - left)/2; // 5 
 
             int midElement = matrix[mid/m][mid%m]; // 5/4 = 1, 5%4 = 1 => matrix[1][1] = 11
 
