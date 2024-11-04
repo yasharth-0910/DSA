@@ -12,7 +12,7 @@ void qs(vector<int>& arr, int low, int high) {
 
     while (i <= j) {
         while (i <= j && arr[i] <= pivot) i++;
-        while (j >= i && arr[j] > pivot) j--;
+        while (i <= j && arr[j] > pivot) j--;
 
         if (i < j) {
             swap(arr[i], arr[j]);
