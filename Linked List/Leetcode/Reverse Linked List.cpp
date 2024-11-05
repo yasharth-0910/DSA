@@ -70,6 +70,10 @@ class Solution {
             return head;
         }
 
+        ListNode *recursive = reverseList(head->next);
+        head->next->next = head;
+        head->next = NULL;
+        
         
     }
 
